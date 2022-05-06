@@ -8,7 +8,7 @@ class Version:
     z: int
 
     @classmethod
-    def parse_str(clscls, content: str) -> 'Version':
+    def parse_str(cls, content: str) -> 'Version':
         start = 0  # start相当于遍历字符串的索引指针
         v = []  # 保存版本号的所有数字
         for i in range(len(content)):
